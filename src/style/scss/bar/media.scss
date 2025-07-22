@@ -8,6 +8,54 @@
     color: if($bar-buttons-monochrome, $bar-buttons-icon, $bar-buttons-media-icon);
 }
 
+.media-image {
+    font-size: 1.2em;
+    min-height: 1.2em;
+    min-width: 1.5em;
+    border-radius: $bar-buttons-radius;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+};
+
+.media-indicator-control-button {
+    background: if($bar-buttons-monochrome, $bar-buttons-icon_background, $bar-buttons-media-icon_background);
+    color: if($bar-buttons-monochrome, $bar-buttons-icon, $bar-buttons-media-background); // highlighted icon
+    // color: if($bar-buttons-monochrome, $bar-buttons-icon, $bar-buttons-media-icon); // normal icon
+    font-size: 1.2em;
+    min-height: 1.2em;
+    min-width: 1.5em;
+    border-radius: $bar-buttons-radius;
+    margin-left: $bar-buttons-media-spacing;
+
+    &.disabled {
+        background: if($bar-menus-monochrome, $bar-menus-buttons-disabled, $bar-menus-menu-media-buttons-inactive);
+    }
+
+    &.enabled {
+        background: if($bar-buttons-monochrome, $bar-buttons-icon_background, $bar-buttons-media-icon_background); // highlighted background
+        // background: if($bar-buttons-monochrome, $bar-buttons-icon_background, $bar-buttons-background); // normal background
+
+        &:hover {
+            background: transparentize(
+                if($bar-menus-monochrome, $bar-menus-buttons-default, $bar-menus-menu-media-buttons-background),
+                0.5
+            );
+        }
+
+        &.active {
+            background: if($bar-buttons-monochrome, $bar-buttons-icon_background, $bar-buttons-media-icon_background);
+
+            &:hover {
+                background: transparentize(
+                    if($bar-menus-monochrome, $bar-menus-buttons-default, $bar-menus-menu-media-buttons-enabled),
+                    0.5
+                );
+            }
+        }
+    }
+  }
+
 .style2 {
     .bar-button-icon.media {
         background: if($bar-buttons-monochrome, $bar-buttons-icon_background, $bar-buttons-media-icon_background);

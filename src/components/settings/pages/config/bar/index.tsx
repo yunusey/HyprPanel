@@ -577,6 +577,18 @@ export const BarSettings = (): JSX.Element => {
                     subtitle="Hide if no media detected."
                     type="boolean"
                 />
+                <Option
+                    opt={options.bar.media.use_image_controls_mode}
+                    title="Use Image Controls Mode (@yunusey mode)"
+                    subtitle="Shows album art and media controls instead of media icon."
+                    type="boolean"
+                />
+                <Option
+                    opt={options.bar.media.disable_media_label}
+                    title="Completely disable media label (@yunusey mode)"
+                    subtitle=""
+                    type="boolean"
+                />
                 <Option opt={options.bar.media.rightClick} title="Right Click" type="string" />
                 <Option opt={options.bar.media.middleClick} title="Middle Click" type="string" />
                 <Option opt={options.bar.media.scrollUp} title="Scroll Up" type="string" />
