@@ -102,14 +102,21 @@ const Volume = (): BarBoxChild => {
                         const throttledHandler = throttledScrollHandler(options.bar.scrollSpeed.get());
 
                         disconnectFunctions.push(
+                            // NOTE: As part of my experiments, I've decided to have the primary click
+                            // mute the audio.
+                            // onPrimaryClick(self, (clicked, event) => {
+                            //     openDropdownMenu(clicked, event, 'audiomenu');
+                            // }),
                             onPrimaryClick(self, (clicked, event) => {
-                                openDropdownMenu(clicked, event, 'audiomenu');
+                                audioService.defaultSpeaker.set_mute(!audioService.defaultSpeaker.mute);
                             }),
                         );
 
                         disconnectFunctions.push(
+                            // NOTE(yunusey): As part of my experiments, I've decided to have the secondary click
+                            // opening the dropdown menu.
                             onSecondaryClick(self, (clicked, event) => {
-                                runAsyncCommand(rightClick.get(), { clicked, event });
+                                openDropdownMenu(clicked, event, 'audiomenu');
                             }),
                         );
 
