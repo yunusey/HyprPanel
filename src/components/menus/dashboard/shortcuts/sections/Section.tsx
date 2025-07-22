@@ -16,27 +16,56 @@ import options from 'src/configuration';
 const { left, right } = options.menus.dashboard.shortcuts;
 
 const leftBindings = [
-    bind(left.shortcut1.command),
+    bind(left.shortcut1.leftClick),
+    bind(left.shortcut1.rightClick),
+    bind(left.shortcut1.middleClick),
+    bind(left.shortcut1.scrollUp),
+    bind(left.shortcut1.scrollDown),
     bind(left.shortcut1.tooltip),
     bind(left.shortcut1.icon),
-    bind(left.shortcut2.command),
+
+    bind(left.shortcut2.leftClick),
+    bind(left.shortcut2.rightClick),
+    bind(left.shortcut2.middleClick),
+    bind(left.shortcut2.scrollUp),
+    bind(left.shortcut2.scrollDown),
     bind(left.shortcut2.tooltip),
     bind(left.shortcut2.icon),
-    bind(left.shortcut3.command),
+
+    bind(left.shortcut3.leftClick),
+    bind(left.shortcut3.rightClick),
+    bind(left.shortcut3.middleClick),
+    bind(left.shortcut3.scrollUp),
+    bind(left.shortcut3.scrollDown),
     bind(left.shortcut3.tooltip),
     bind(left.shortcut3.icon),
-    bind(left.shortcut4.command),
+
+    bind(left.shortcut4.leftClick),
+    bind(left.shortcut4.rightClick),
+    bind(left.shortcut4.middleClick),
+    bind(left.shortcut4.scrollUp),
+    bind(left.shortcut4.scrollDown),
     bind(left.shortcut4.tooltip),
     bind(left.shortcut4.icon),
 ];
 
 const rightBindings = [
-    bind(right.shortcut1.command),
+    bind(right.shortcut1.leftClick),
+    bind(right.shortcut1.rightClick),
+    bind(right.shortcut1.middleClick),
+    bind(right.shortcut1.scrollUp),
+    bind(right.shortcut1.scrollDown),
     bind(right.shortcut1.tooltip),
     bind(right.shortcut1.icon),
-    bind(right.shortcut3.command),
+
+    bind(right.shortcut3.leftClick),
+    bind(right.shortcut3.rightClick),
+    bind(right.shortcut3.middleClick),
+    bind(right.shortcut3.scrollUp),
+    bind(right.shortcut3.scrollDown),
     bind(right.shortcut3.tooltip),
     bind(right.shortcut3.icon),
+
     bind(leftCardHidden),
     bind(isRecording),
 ];

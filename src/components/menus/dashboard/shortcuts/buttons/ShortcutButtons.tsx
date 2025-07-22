@@ -1,7 +1,8 @@
+import { Astal } from 'astal/gtk3';
 import { Widget } from 'astal/gtk3';
 import { handleClick, hasCommand } from '../helpers';
 import options from 'src/configuration';
-import { isPrimaryClick } from 'src/lib/events/mouse';
+import { isPrimaryClick, isSecondaryClick, isMiddleClick } from 'src/lib/events/mouse';
 import { ShortcutVariable } from '../types';
 
 const { left, right } = options.menus.dashboard.shortcuts;
@@ -11,9 +12,15 @@ const ShortcutButton = ({ shortcut, ...props }: ShortcutButtonProps): JSX.Elemen
         <button
             vexpand
             tooltipText={shortcut.tooltip.get()}
-            onClick={(_, event) => {
+            onClick={(_: Astal.Button, event: Astal.ClickEvent) => {
                 if (isPrimaryClick(event)) {
-                    handleClick(shortcut.command.get());
+                    handleClick(shortcut.leftClick.get());
+                }
+                if (isSecondaryClick(event)) {
+                    handleClick(shortcut.rightClick.get());
+                }
+                if (isMiddleClick(event)) {
+                    handleClick(shortcut.middleClick.get());
                 }
             }}
             {...props}

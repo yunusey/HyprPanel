@@ -84,8 +84,18 @@ export const DashboardMenuSettings = (): JSX.Element => {
                     type="string"
                 />
                 <Option
-                    opt={options.menus.dashboard.shortcuts.left.shortcut1.command}
-                    title="Left - Shortcut 1 (Command)"
+                    opt={options.menus.dashboard.shortcuts.left.shortcut1.leftClick}
+                    title="Left - Shortcut 1 (Left Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.left.shortcut1.rightClick}
+                    title="Left - Shortcut 1 (Right Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.left.shortcut1.middleClick}
+                    title="Left - Shortcut 1 (Middle Click Command)"
                     type="string"
                 />
                 <Option
@@ -100,8 +110,18 @@ export const DashboardMenuSettings = (): JSX.Element => {
                     type="string"
                 />
                 <Option
-                    opt={options.menus.dashboard.shortcuts.left.shortcut2.command}
-                    title="Left - Shortcut 2 (Command)"
+                    opt={options.menus.dashboard.shortcuts.left.shortcut2.leftClick}
+                    title="Left - Shortcut 2 (Left Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.left.shortcut2.rightClick}
+                    title="Left - Shortcut 2 (Right Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.left.shortcut2.middleClick}
+                    title="Left - Shortcut 2 (Middle Click Command)"
                     type="string"
                 />
                 <Option
@@ -116,8 +136,18 @@ export const DashboardMenuSettings = (): JSX.Element => {
                     type="string"
                 />
                 <Option
-                    opt={options.menus.dashboard.shortcuts.left.shortcut3.command}
-                    title="Left - Shortcut 3 (Command)"
+                    opt={options.menus.dashboard.shortcuts.left.shortcut3.leftClick}
+                    title="Left - Shortcut 3 (Left Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.left.shortcut3.rightClick}
+                    title="Left - Shortcut 3 (Right Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.left.shortcut3.middleClick}
+                    title="Left - Shortcut 3 (Middle Click Command)"
                     type="string"
                 />
                 <Option
@@ -132,8 +162,18 @@ export const DashboardMenuSettings = (): JSX.Element => {
                     type="string"
                 />
                 <Option
-                    opt={options.menus.dashboard.shortcuts.left.shortcut4.command}
-                    title="Left - Shortcut 4 (Command)"
+                    opt={options.menus.dashboard.shortcuts.left.shortcut4.leftClick}
+                    title="Left - Shortcut 4 (Left Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.left.shortcut4.rightClick}
+                    title="Left - Shortcut 4 (Right Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.left.shortcut4.middleClick}
+                    title="Left - Shortcut 4 (Middle Click Command)"
                     type="string"
                 />
                 <Option
@@ -149,8 +189,18 @@ export const DashboardMenuSettings = (): JSX.Element => {
                     type="string"
                 />
                 <Option
-                    opt={options.menus.dashboard.shortcuts.right.shortcut1.command}
-                    title="Right - Shortcut 1 (Command)"
+                    opt={options.menus.dashboard.shortcuts.right.shortcut1.leftClick}
+                    title="Right - Shortcut 1 (Right Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.right.shortcut1.rightClick}
+                    title="Right - Shortcut 1 (Right Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.right.shortcut1.middleClick}
+                    title="Right - Shortcut 1 (Middle Click Command)"
                     type="string"
                 />
                 <Option
@@ -165,8 +215,18 @@ export const DashboardMenuSettings = (): JSX.Element => {
                     type="string"
                 />
                 <Option
-                    opt={options.menus.dashboard.shortcuts.right.shortcut3.command}
-                    title="Right - Shortcut 3 (Command)"
+                    opt={options.menus.dashboard.shortcuts.right.shortcut3.leftClick}
+                    title="Right - Shortcut 3 (Right Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.right.shortcut3.rightClick}
+                    title="Right - Shortcut 3 (Right Click Command)"
+                    type="string"
+                />
+                <Option
+                    opt={options.menus.dashboard.shortcuts.right.shortcut3.middleClick}
+                    title="Right - Shortcut 3 (Middle Click Command)"
                     type="string"
                 />
                 <Option

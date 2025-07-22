@@ -57,7 +57,13 @@ export const handleClick = (action: string, tOut: number = 0): void => {
  * @returns True if the shortcut has a command, false otherwise.
  */
 export const hasCommand = (shortCut: ShortcutVariable): boolean => {
-    return shortCut.command.get().length > 0;
+    return (
+        shortCut.leftClick.get().length > 0 ||
+        shortCut.rightClick.get().length > 0 ||
+        shortCut.middleClick.get().length > 0 ||
+        shortCut.scrollUp.get().length > 0 ||
+        shortCut.scrollDown.get().length > 0
+    );
 };
 
 /**
