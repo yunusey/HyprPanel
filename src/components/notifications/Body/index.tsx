@@ -16,7 +16,7 @@ export const Body = ({ notification }: BodyProps): JSX.Element => {
                 justify={Gtk.Justification.LEFT}
                 hexpand
                 useMarkup
-                onRealize={(self) => self.set_markup(escapeMarkup(notification.body))}
+                onRealize={(self) => self.set_markup(notification.body)}
             />
         </box>
     );
